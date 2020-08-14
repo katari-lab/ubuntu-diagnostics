@@ -1,5 +1,6 @@
 from ubuntu:20.10
 
+USER root
 RUN apt-get update -y 
 RUN apt-get upgrade -y 
 RUN apt-get install dnsutils -y
@@ -12,3 +13,4 @@ RUN apt install python3.8 -y
 RUN apt install python3-pip -y
 RUN apt-get install vim -y
 RUN python3 --version
+RUN echo 'root:diag!' | chpasswd
