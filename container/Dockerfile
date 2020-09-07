@@ -12,5 +12,6 @@ RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt install python3.8 -y 
 RUN apt install python3-pip -y
 RUN apt-get install vim -y
+RUN apt-get install telnet -y
 RUN python3 --version
 RUN echo 'root:diag!' | chpasswd
